@@ -41,6 +41,48 @@ const initialFacts = [
     votesFalse: 1,
     createdIn: 2015,
   },
+  // Categoria "news"
+  {
+    id: 4,
+    text: "Nel 2023, l'Unione Europea ha approvato il regolamento sull'IA più rigoroso al mondo.",
+    source: "https://ec.europa.eu/digital-strategy/artificial-intelligence",
+    category: "news",
+    votesInteresting: 16,
+    votesMindblowing: 7,
+    votesFalse: 3,
+    createdIn: 2023,
+  },
+  {
+    id: 5,
+    text: "Il telescopio spaziale James Webb ha fornito immagini dettagliate di galassie a oltre 13 miliardi di anni luce di distanza.",
+    source: "https://www.nasa.gov/webb",
+    category: "news",
+    votesInteresting: 20,
+    votesMindblowing: 15,
+    votesFalse: 1,
+    createdIn: 2022,
+  },
+  // Categoria "health"
+  {
+    id: 6,
+    text: "Gli scienziati hanno scoperto che dormire meno di 6 ore a notte aumenta il rischio di malattie cardiache del 48%.",
+    source: "https://www.healthline.com/sleep-study",
+    category: "health",
+    votesInteresting: 12,
+    votesMindblowing: 5,
+    votesFalse: 2,
+    createdIn: 2021,
+  },
+  {
+    id: 7,
+    text: "L'acqua potabile contaminata causa ancora oltre 1,2 milioni di morti all'anno a livello globale.",
+    source: "https://www.who.int/water-sanitation-health",
+    category: "health",
+    votesInteresting: 18,
+    votesMindblowing: 8,
+    votesFalse: 0,
+    createdIn: 2020,
+  },
 ];
 
 // LINK TO APP SAMPLE DATA: https://docs.google.com/spreadsheets/d/1eeldcA_OwP4DHYEvjG0kDe0cRys-cDPhc_E9P9G1e3I/edit#gid=0
