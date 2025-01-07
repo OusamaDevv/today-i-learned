@@ -19,17 +19,12 @@ factsList.innerHTML = "";
 
 // Load data from supebase
 async function loadFacts() {
-  const res = await fetch(
-    "https://rrpgufsggsrkorjzmgmz.supabase.co/rest/v1/facts",
-    {
-      headers: {
-        apikey:
-          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJycGd1ZnNnZ3Nya29yanptZ216Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzUzODk4MzEsImV4cCI6MjA1MDk2NTgzMX0._YyiL9yiTEWHHY2qrPVPeaxl5deGkQhDO3PKSOgBzdY",
-        authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJycGd1ZnNnZ3Nya29yanptZ216Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzUzODk4MzEsImV4cCI6MjA1MDk2NTgzMX0._YyiL9yiTEWHHY2qrPVPeaxl5deGkQhDO3PKSOgBzdY",
-      },
-    }
-  );
+  const res = await fetch(process.env.REACT_APP_API_URL, {
+    headers: {
+      apikey: process.env.REACT_APP_API_KEY,
+      authorization: process.env.REACT_APP_API_BEARER,
+    },
+  });
   const data = await res.json();
   createFactList(data);
 }
