@@ -5,7 +5,7 @@
 ## 🌟 Demo Online
 
 Puoi accedere all'applicazione live tramite il seguente link:  
-[Today I Learned](https://todayilearned-jonas.netlify.app/)
+[Today I Learned](https://todayilearned-ousama.netlify.app/)
 
 **Nota**: L'URL potrebbe differire leggermente dalla versione personale, ma il contenuto è lo stesso.
 
@@ -25,5 +25,28 @@ Segui questi passaggi per eseguire l'applicazione in locale:
    git clone <URL_DEL_TUO_REPOSITORY>
    cd today-i-learned
    ```
+2. Installa le dipendenze:
+   ```bash
+   npm install
+   ```
+3. Avvia l'applicazione:
+   ```bash
+   npm start
+   ```
+   L'app sarà disponibile su [http://localhost:3000/](http://localhost:3000/).
 
-// TODO da completare
+## 🧑‍💻 Tecnologie Utilizzate
+
+- **React**: Framework per lo sviluppo frontend.
+- **CSS Modules**: Per uno stile modulare e riutilizzabile.
+- **Netlify**: Hosting per il deployment della versione live.
+
+## 📦 Deployment
+
+Per effettuare il deployment dell'applicazione, è stato utilizzato Netlify. Dopo aver costruito l'applicazione con il comando:
+
+```bash
+npm run build
+```
+
+I file generati nella cartella `build/` vengono caricati su Netlify per essere serviti online.
